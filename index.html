@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>OCTOTHORPE</title>
+    <style>
+      #main {
+        border: 1px solid gray;
+        margin: 0 auto;
+        height: 100%;
+      }
+
+      #text {
+        border: 1px dotted black;
+        width: 100%;
+        height: 35vh;
+      }
+      form input {
+        height: 35vh;
+        width: 100%;
+        font-size: xx-large;
+        padding: 1vw;
+      }
+      #print-btn {
+        padding-top: 1vh;
+        height: 15vh;
+        width: 95%;
+        background-color: skyblue;
+        color: white;
+        border-radius: 0.25vw;
+        margin: 0 auto;
+        text-align: center;
+      }
+      meter {
+        width: 100%;
+        height: 5vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+      }
+      svg {
+        height: 5em;
+        width: 5em;
+        /*viewBox: 0 0 100 100;*/
+      }
+      svg polygon {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='main'>
+      <div id='text'></div>
+      <div id='form-area'>
+        <form>
+          <input type='text'>
+        </form>
+      </div>
+      <div id='info'>
+        <span id='itr-num'></span>
+        <meter min=0 max=100 value=0></meter>
+      </div>
+      <div id='print-btn'>Print Genome</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src='main.js'></script>
+  </body>
+</html>
